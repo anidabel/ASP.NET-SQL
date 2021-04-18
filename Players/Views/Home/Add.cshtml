@@ -1,0 +1,68 @@
+﻿
+@{
+    //ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <div class="text-center">
+        <h1 class="display-4">Lab_1 ASP.NET + SQL</h1>
+    </div>
+</head>
+<body>
+    <div class="text-center">
+        <h3>Add new player</h3>
+        <form method="post">
+            @*<input type="hidden" value="@ViewBag.Player" name="pl" />*@
+            <table>
+                <tr>
+                    <td>PlayerId:</td>
+                    <td><input type="text" name="PlayerId" /> </td>
+                </tr>
+                <tr>
+                    <td>Jersey:</td>
+                    <td><input type="number" name="Jersey" /></td>
+                </tr>
+                <tr>
+                    <td>FName:</td>
+                    <td><input type="text" name="FName" /></td>
+                </tr>
+                <tr>
+                    <td>SName:</td>
+                    <td><input type="text" name="SName" /></td>
+                </tr>
+                <tr>
+                    <td>Position:</td>
+                    <td><input type="text" name="Position" /></td>
+                </tr>
+                <tr>
+                    <td>BirthDay:</td>
+                    <td><input type="date" name="BirthDay" /></td>
+                </tr>
+                <tr>
+                    <td>Weight:</td>
+                    <td><input type="number" name="Weigth" /></td>
+                </tr>
+                <tr>
+                    <td>Height:</td>
+                    <td><input type="number" name="Height" /></td>
+                </tr>
+                <tr>
+                    <td>BirthCity:</td>
+                    <td><input type="text" name="BirthCity" /></td>
+                </tr>
+                <tr>
+                    <td>BirthState:</td>
+                    <td><input type="text" name="BirthState" /></td>
+                </tr>
+                <tr><td><input type="submit" value="Добавить" /> </td><td></td></tr>
+            </table>
+            <a href="~/Home/Index/">Посмотреть</a>
+        </form>
+    </div>
+</body>
+

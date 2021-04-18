@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Players.Models.Player>
+@{
+    //ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <div class="text-center">
+        <h1 class="display-4">Lab_1 ASP.NET + SQL</h1>
+    </div>
+</head>
+<body>
+    <div class="text-center">
+        <h3>Players</h3>
+        <table>
+            <tr>
+                <td>playerID</td>
+                <td>jersey</td>
+                <td>fName</td>
+                <td>sName</td>
+                <td>position</td>
+                <td>brthday</td>
+                <td>weight</td>
+                <td>height</td>
+                <td>birthcity</td>
+                <td>birthstate</td>
+            </tr>
+            @{
+                foreach (var player in Model)
+                {
+                    <tr>
+                        <td>@player.PlayerId</td>
+                        <td>@player.Jersey</td>
+                        <td>@player.FName</td>
+                        <td>@player.SName</td>
+                        <td>@player.Position</td>
+                        <td>@player.BirthDay</td>
+                        <td>@player.Weigth</td>
+                        <td>@player.Height</td>
+                        <td>@player.BirthCity</td>
+                        <td>@player.BirthState</td>
+                    </tr>
+                }
+            }
+        </table>
+
+        <a href="~/Home/Add">Add new player</a>
+    </div>
+</body>
